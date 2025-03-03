@@ -1,0 +1,56 @@
+cabal-version: 2.2
+
+-- This file has been generated from package.yaml by hpack version 0.36.1.
+--
+-- see: https://github.com/sol/hpack
+
+name:           wolfram
+version:        0.1.0.0
+synopsis:       Wolfram Automaton Simulator
+description:    A simple Haskell program to simulate Wolfram's automaton.
+category:       Simulation
+homepage:       https://github.com/githubuser/Wolfram#readme
+author:         Clément Bouret
+maintainer:     clement.bouret@epitech.eu
+copyright:      2025 Clément Bouret
+license:        BSD-3-Clause
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+library
+  exposed-modules:
+      Arguments
+      Automaton
+      Display
+      Main
+      Wolfram
+  other-modules:
+      Paths_wolfram
+  autogen-modules:
+      Paths_wolfram
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+executable wolfram
+  main-is: Main.hs
+  other-modules:
+      Arguments
+      Automaton
+      Display
+      Wolfram
+      Paths_wolfram
+  autogen-modules:
+      Paths_wolfram
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      base
+  default-language: Haskell2010
