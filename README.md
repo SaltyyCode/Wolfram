@@ -2,47 +2,48 @@
 
 ## Description
 
-Le projet Wolfram consiste à implémenter un [automate cellulaire élémentaire](https://en.wikipedia.org/wiki/Elementary_cellular_automaton) dans le terminal en Haskell. Il s'agit de reproduire les règles d'évolution d'un automate de Wolfram sur un espace infini en simulant l'évolution des cellules génération après génération.
+The Wolfram project involves implementing an [elementary cellular automaton](https://en.wikipedia.org/wiki/Elementary_cellular_automaton) in the terminal using Haskell. It aims to reproduce the evolution rules of a Wolfram automaton on an infinite space by simulating the evolution of cells generation after generation.
+
 
 ## Compilation
 
-Le projet utilise Stack pour la compilation et est géré via un Makefile contenant les règles suivantes :
+The project uses Stack for compilation and is managed via a Makefile containing the following rules:
 
-```make``` : Compile le projet via stack build
+```make``` : Compiles the project via stack build
 
-```make clean``` : Supprime les fichiers compilés
+```make clean``` :  Removes compiled files
 
-```make fclean``` : Supprime tous les fichiers de compilation et de build
+```make fclean``` :  Removes all compilation and build files
 
-```make re ```: Recompile entièrement le projet
+```make re ```: Completely recompiles the project
 
-## Fonctionnalités
+## Features
 
-Le programme implémente les règles suivantes :
+The program implements the following rules: 
 
-- *Règle 30*
+- *Rule 30*
 
-- *Règle 90*
+- *Rule 90*
 
-- *Règle 110*
+- *Rule 110*
 
-## Utilisation
+## Usage
 
-Le programme prend en charge plusieurs options en ligne de commande :
+The program supports several command line options:
 
 ```./wolfram --rule <num> [--start <num>] [--lines <num>] [--window <num>] [--move <num>]```
 
 
-```--rule <num>``` : Spécifie la règle à utiliser (0->256)
+```--rule <num>``` :  Specifies the rule to use (0->256)
 
-```--start <num>``` : Numéro de génération à partir de laquelle l'affichage commence (par défaut 0)
+```--start <num>``` : Generation number from which the display begins (default 0)
 
-```--lines <num>``` : Nombre de lignes à afficher (si omis, le programme continue indéfiniment)
+```--lines <num>``` : Number of lines to display (if omitted, the program continues indefinitely)
 
-```--window <num>``` : Nombre de cellules affichées sur chaque ligne (par défaut 80)
+```--window <num>``` : Number of cells displayed on each line (default 80)
 
-```--move <num>``` : Translation appliquée à la fenêtre d'affichage (positif : droite, négatif : gauche)
+```--move <num>``` : Translation applied to the display window (positive: right, negative: left)
 
 ## Bonus
 
-En bonus, toutes les 256 règles possibles ont été implémentées, permettant une simulation complète des automates cellulaires de Wolfram.
+As a bonus, all 256 possible rules have been implemented, allowing for complete simulation of Wolfram cellular automata.RetryClaude does not have internet access. Links provided may not be accurate or up to date.
