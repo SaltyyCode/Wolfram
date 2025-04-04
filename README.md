@@ -46,4 +46,4 @@ The program supports several command line options:
 
 ## Bonus
 
-As a bonus, all 256 possible rules have been implemented, allowing for complete simulation of Wolfram cellular automata.RetryClaude does not have internet access. Links provided may not be accurate or up to date.
+As a bonus, all 256 possible rules have been implemented, allowing for complete simulation of Wolfram cellular automaton.
